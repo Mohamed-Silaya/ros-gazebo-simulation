@@ -1,0 +1,31 @@
+differential_drive_controller:
+  left_wheel_joint: "left_wheel_joint"
+  right_wheel_joint: "right_wheel_joint"
+  wheel_separation: 0.5
+  wheel_radius: 0.1
+  publish_rate: 50
+  cmd_vel_timeout: 0.25
+  linear:
+    x:
+      pid:
+        p: 10
+        i: 0
+        d: 0
+        i_clamp: 0
+      min_velocity: -1
+      max_velocity: 1
+      min_acceleration: -1
+      max_acceleration: 1
+      deadband: 0.01
+  angular:
+    z:
+      pid:
+        p: 10
+        i: 0
+        d: 0
+        i_clamp: 0
+      min_velocity: -1
+      max_velocity: 1
+      min_acceleration: -1
+      max_acceleration: 1
+      deadband: 0.01
